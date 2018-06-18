@@ -1,9 +1,8 @@
-
+/*function to make a N/M grid table when height and width is submit*/
 function makeGrid() {
     "use strict";
 
-    let height =
-    document.getElementById('input_Height').value;
+    let height =document.getElementById('input_Height').value;
     let width = document.getElementById('input_Width').value;
     let table = document.getElementById('pixel_Canvas');
 
@@ -26,7 +25,7 @@ function makeGrid() {
 //jQuery to change color of pixel when clicked.
 $('body').on('click', 'td', function () {
     "use strict";
-    var color = document.getElementById('color_Picker').value;
+    let color = document.getElementById('color_Picker').value;
     $(this).css('background-color', color);
 
     if ($(this).attr('style')) {
